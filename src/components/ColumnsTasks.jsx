@@ -130,11 +130,10 @@ const ColumnsTasks = (props) => {
 
   const handleNewTask = (text) => {
     textRef.current = text.target.value;
-    console.log(textRef.current);
   }
 
   const handleSubmiteNewTask = () => {
-    idRef.current = idRef.current + 1
+    idRef.current = idRef.current + 1;
 
     let task = {
       id : idRef.current,
@@ -142,9 +141,6 @@ const ColumnsTasks = (props) => {
     }
 
     const newTD = [...props.items.TD, task];
-
-    console.log(newTD);
-
     
     props.setItems((prev) => {
       return {
