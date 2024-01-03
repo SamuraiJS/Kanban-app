@@ -1,0 +1,31 @@
+* {
+    --azul-oscuro: #042940;
+    --verde-oscuro: #005C53;
+    --verde-amarronado: #9FC131;
+    --amarillo: #DBF227;
+    --beige: #D6D58E;
+}
+
+.delete {
+    background-color: #242424;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: flex;
+    z-index: 10;
+  }
+  
+  .itemSort {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--amarillo);
+    color: #242424;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 5px;
+  }
+
+  .container-item {
+    display: flex;
+    align-items: center;
+  }

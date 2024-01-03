@@ -1,0 +1,63 @@
+* {
+    --azul-oscuro: #042940;
+    --verde-oscuro: #005C53;
+    --verde-amarronado: #9FC131;
+    --amarillo: #DBF227;
+    --beige: #D6D58E;
+}
+
+.app {
+    background-color: var(--verde-oscuro);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-task {
+    width: min(90%, 300px);
+    background-color: var(--azul-oscuro);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.new-task button {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease-in;
+}
+
+.new-task button:hover {
+    box-shadow: 0 0 10px 2px var(--beige);
+}
+
+.new-task input {
+    background-color: var(--beige);
+    color: #242424;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--azul-oscuro);
+}
+
+@media screen and (min-width: 540px) {
+    .columns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    } 
+}
